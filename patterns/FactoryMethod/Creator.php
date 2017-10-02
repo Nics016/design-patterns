@@ -5,22 +5,19 @@
 abstract class Creator
 {
 	/**
-	 * Method which defines which instance has to be created
+	 * Factory Method definition
 	 * 
-	 * @return mixed $instance - instance
+	 * @return mixed $result - result
 	 */
 	protected abstract function factoryMethod();
 
 	/**
-	 * Returns intance which is got by factoryMethod()
+	 * Returns factoryMethod's result
 	 * 
-	 * @return mixed $instance - instance
+	 * @return mixed $result - result
 	 */
 	public function startFactory()
 	{
-		/** @var mixed $instance - instace to be returned */
-		$instance = $this->factoryMethod();
-
-		return $instance;
+		return $this->factoryMethod();
 	}
 }
