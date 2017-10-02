@@ -3,9 +3,9 @@ include_once('Creator.php');
 include_once('Product/SimpleProduct.php');
 
 /**
- * TextFactory
+ * SimpleProductFactory
  */
-class TextFactory extends Creator
+class SimpleProductFactory extends Creator
 {
 	/**
 	 * Factory Method
